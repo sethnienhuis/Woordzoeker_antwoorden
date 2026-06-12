@@ -8,6 +8,9 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -19,8 +22,10 @@
         }
 
         .hero-image {
+            flex: 1;
             width: 100%;
-            display: block;
+            object-fit: contain;
+            min-height: 0;
         }
     </style>
 </head>
