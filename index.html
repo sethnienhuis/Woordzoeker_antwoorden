@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Pagina</title>
+    <title>Puzzels</title>
     <style>
         body {
-            margin: 10;
+            margin: 0;
             font-family: Arial, sans-serif;
-            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
         }
 
-        header {
-            color: black;
-            text-align: center;
-            padding: 20px;
-            font-size: 2em;
+        h1 {
+            margin-bottom: 40px;
         }
 
-        .hero-image {
-            flex: 1;
-            width: 100%;
-            object-fit: contain;
-            min-height: 0;
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-size: 1.2em;
+            padding: 15px 40px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        Antwoorden woordzoeker
-    </header>
+    <h1>Kies een puzzel</h1>
 
-    <img
-        class="hero-image"
-        src="antwoorden.svg"
-        alt="Antwoorden woordzoeker">
+    <a href="woordzoeker.html">
+        <button>Woordzoeker</button>
+    </a>
+
+    <a href="doolhof.html">
+        <button>Doolhof</button>
+    </a>
 
 </body>
 </html>
